@@ -41,33 +41,40 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
-## Things Joe should look at before any of this goes live
+## Content corrections
 
-These are content issues carried over from the current site, not design decisions:
+The copy on the live site attributes specific invented statistics to real, checkable papers.
+Each figure below was verified against its source and corrected in this preview. The full log is
+rendered on the page at [training.html#references](training.html) so Joe sees it in context.
 
-1. **The references section on the live site is placeholder text.** It literally reads
-   "1. text 2. text 3. text 4. text". I have written out the five real citations on
-   [training.html#references](training.html) based on the author names and years used in the
-   body copy, but Joe should confirm each one.
+| Claim on the live site | What the source actually says |
+|---|---|
+| "Neville et al., 2024" | No such paper found. The study described (218 trials, 14,170 participants) is **Noetel et al., 2024**, *BMJ* 384:e075847. |
+| "62% reduction in depression symptoms" from strength training | Noetel reports Hedges' g, not percentages. Strength training was **g -0.49** (95% CrI -0.69 to -0.29). The -0.62 figure is **walking and jogging**, a different modality. |
+| "Same effect size as antidepressant medications, but without the side effects" | Removed. A clinical equivalence claim is not one a personal training site should make. |
+| "23% higher physical self-worth scores (Gordon et al., 2018)" | Gordon 2018 measures **depressive symptoms only**. It does not assess self-worth, self-esteem or self-efficacy. Actual finding: **Δ 0.66** (95% CI 0.48 to 0.83) across 33 trials and 1,877 participants, NNT 4. |
+| "Measurable improvements in self-efficacy within 8 weeks (Gordon et al., 2018)" | Same problem, same paper. Replaced with the real finding. |
+| "Life expectancy increases of 2 to 5 years (Lee et al., 2012)" | Lee 2012 estimates **0.68 years** (range 0.41 to 0.95) of global life expectancy from eliminating inactivity. Off by roughly 5x. |
+| "40% better sleep quality scores" | No citation anywhere. Now stated as Joe's own observation, not a statistic. |
+| "Staying inactive can cut your life short by 3 to 5 years" | Conflicts with the 0.68 figure above. Replaced with Lee's "roughly one in ten premature deaths worldwide". |
 
-2. **"Neville et al., 2024" appears to be a misattribution.** The study described in the copy
-   (a 2024 meta-analysis of 218 studies and 14,170 participants on exercise and depression) is
-   Noetel et al., 2024 in the *BMJ*. There is no Neville paper matching that description that I
-   could find. The reference list uses Noetel and flags the discrepancy on the page.
+**Still unverified and needing Joe's sources:** the 250,000 annual US deaths figure, "35% of heart
+disease deaths", "19 chronic conditions", and "3% to 8% of muscle mass per decade". These are
+plausible and widely repeated, but I could not tie them to the cited papers, so they are left in
+place and flagged rather than silently changed.
 
-3. **The "62% reduction in depression symptoms" figure needs a source check.** Noetel et al.
-   reported effect sizes as standardised mean differences, not as a percentage reduction, so
-   the 62% number does not obviously come from that paper. It is repeated three times across
-   the site, including as a headline claim, so it is worth getting right.
+These are health claims published under Joe's name and certification. Getting them wrong is a
+bigger risk to him than any design decision in this repo.
 
-4. **The only conversion path is a phone call.** There is no booking form, no email address,
-   and no scheduling link anywhere on the current site. The preview uses `tel:` links
-   throughout. If Joe wants a consult form or a Calendly embed, that is a real addition, not a
-   restyle, and should be decided before build.
+## Contact
 
-5. **All photography except the headshot is stock.** Real client and session photos would do
-   more for this design than anything else on the list. Joe's own gym, his own clients, his
-   own sessions. That is the single highest-value thing he could hand over.
+The live site's only conversion path is a phone call. No form, no email address, no scheduling
+link exists anywhere on it. This preview adds **text message** (`sms:` links) alongside the phone
+number, which needs no backend and works today.
+
+A real consult form still needs two things from Joe that do not exist yet: an email address to
+send to, and an endpoint to post to (Formspree, Netlify Forms, or similar). Worth doing, since a
+fair share of people will not cold-call a stranger about their weight.
 
 ## Photography
 

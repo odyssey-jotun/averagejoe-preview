@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <div class="preview-pill">Design preview &middot; not the live site</div>
@@ -163,7 +163,7 @@
           </details>
           <details>
             <summary>How long does it take to see results?</summary>
-            <div class="answer"><p>Most clients notice strength gains within two to three weeks and visible muscle growth within eight to twelve. Studies show measurable improvements in body composition, mood, and self confidence after just eight weeks of consistent training.<sup>2</sup></p></div>
+            <div class="answer"><p>Most clients notice strength gains within two to three weeks and visible muscle growth within eight to twelve. Resistance training also shows a moderate effect on depressive symptoms across 33 randomised trials, so the mood change often arrives before the mirror does.<sup>2</sup></p></div>
           </details>
           <details>
             <summary>What makes your training different from other trainers?</summary>
@@ -210,7 +210,18 @@
             <li>Noetel, M., et al. (2024). Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials. <em>BMJ</em>, 384, e075847. <span class="muted">(218 studies, 14,170 participants.)</span></li>
             <li>Lee, I. M., et al. (2012). Effect of physical inactivity on major non-communicable diseases worldwide. <em>The Lancet</em>, 380(9838), 219 to 229.</li>
           </ol>
-          <p class="muted" style="margin-top:20px;font-size:0.88rem">Note for review: the live site cites this fourth source as "Neville et al., 2024". The study matching that description (218 studies, 14,170 participants) is Noetel et al., 2024 in the BMJ. Worth confirming with Joe before publishing.</p>
+          <div class="muted" style="margin-top:22px;font-size:0.88rem;border-top:1px solid var(--border);padding-top:18px">
+            <p style="margin-bottom:10px"><strong style="color:var(--text)">Corrections made against the live site.</strong> Each figure below was checked against the source paper and changed here:</p>
+            <ul style="display:grid;gap:9px">
+              <li><strong style="color:var(--text)">"Neville et al., 2024"</strong> does not appear to exist. The study described (218 trials, 14,170 participants) is Noetel et al., 2024 in the <em>BMJ</em>.</li>
+              <li><strong style="color:var(--text)">"62% reduction in depression symptoms"</strong> is not a finding of that paper. Noetel reports Hedges' g, not percentages. Strength training was g &minus;0.49; the &minus;0.62 figure belongs to walking and jogging, a different modality.</li>
+              <li><strong style="color:var(--text)">"Same effect size as antidepressant medication"</strong> has been removed. That is a clinical comparison, and it is not one a training site should be making.</li>
+              <li><strong style="color:var(--text)">"23% higher physical self worth"</strong> and <strong style="color:var(--text)">"improvements in self efficacy"</strong> were both credited to Gordon et al., 2018. That paper measures depressive symptoms only; it does not assess self worth, self esteem, or self efficacy. Replaced with its actual finding (&#8710; 0.66 across 33 trials, number needed to treat 4).</li>
+              <li><strong style="color:var(--text)">"Life expectancy increases of 2 to 5 years"</strong> credited to Lee et al., 2012. That paper estimates 0.68 years (range 0.41 to 0.95) of global life expectancy from eliminating inactivity.</li>
+              <li><strong style="color:var(--text)">"40% better sleep quality scores"</strong> carried no citation at all and is now stated as Joe's own observation rather than a statistic.</li>
+            </ul>
+            <p style="margin-top:14px">Still unverified, and needing Joe's sources: the 250,000 annual US deaths figure, "35% of heart disease deaths", "19 chronic conditions", and "3% to 8% of muscle mass per decade".</p>
+          </div>
         </div>
       </div>
     </section>
@@ -224,6 +235,7 @@
           <a class="phone-big" href="tel:+15018608045">(501) 860-8045</a>
           <div class="btn-row">
             <a class="btn btn-ember" href="tel:+15018608045">Book your free consult <span class="arr"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>
+            <a class="btn btn-glass" href="sms:+15018608045">Text instead <span class="arr"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9.5a2 2 0 0 1-2 2H6l-3.5 2.5v-2.5H3a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2z"/></svg></span></a>
             <a class="btn btn-glass" href="about.html">Meet Joe first</a>
           </div>
         </div>
@@ -249,6 +261,7 @@
           <div>
             <h4>Get started</h4>
             <a href="tel:+15018608045">(501) 860-8045</a>
+            <a href="sms:+15018608045">Text (501) 860-8045</a>
             <a href="tel:+15018608045">Free 30 minute consult</a>
             <a href="training.html#references">References</a>
           </div>
@@ -261,6 +274,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=2"></script>
+  <script src="main.js?v=3"></script>
 </body>
 </html>
