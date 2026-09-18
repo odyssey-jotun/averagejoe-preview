@@ -66,7 +66,35 @@ These are content issues carried over from the current site, not design decision
    restyle, and should be decided before build.
 
 5. **All photography except the headshot is stock.** Real client and session photos would do
-   more for this design than anything else on the list.
+   more for this design than anything else on the list. Joe's own gym, his own clients, his
+   own sessions. That is the single highest-value thing he could hand over.
+
+## Photography
+
+The photos on the current site are generic paid-stock, and the hero was a full-bleed shot of an
+unidentified man, which on a solo trainer's site reads as "this is Joe." It is not Joe, so it has
+been replaced.
+
+The hero is now gym equipment, with Joe's actual headshot as a captioned portrait card carrying
+his name and credentials. Nobody in the imagery is standing in for the trainer.
+
+Everything else is **CC0 / public domain**, so there is no attribution requirement and no
+licensing risk for commercial use. Sources, for verification:
+
+| File | Source | Credit |
+|---|---|---|
+| `hero-gym.jpg` | [rawpixel](https://www.rawpixel.com/image/5903386/photo-image-public-domain-free-workout) | public domain |
+| `plates.jpg` | [rawpixel](https://www.rawpixel.com/image/6029749/photo-image-public-domain-free-plates) | public domain |
+| `kettlebells.jpg` | [rawpixel](https://www.rawpixel.com/image/6038425/photo-image-public-domain-free-sport) | public domain |
+| `back.jpg` | [StockSnap](https://stocksnap.io/photo/girl-woman-ZFIQC5CZRP) | Scott Webb, CC0 |
+| `mirror.jpg` | [StockSnap](https://stocksnap.io/photo/girl-woman-XBU0JECP7E) | Scott Webb, CC0 |
+| `bwbar.jpg` | [StockSnap](https://stocksnap.io/photo/girl-woman-EHS7NJY7KT) | Alexandre Vanier, CC0 |
+| `cable.jpg` | [StockSnap](https://stocksnap.io/photo/man-workout-KZROPA98J8) | Bruce Mars, CC0 |
+| `joe.jpg`, `img/wordmark.png` | Joe's own site | his own assets |
+
+Found via [Openverse](https://openverse.org), filtered to licenses permitting commercial use and
+modification. CC0 needs no credit line on the site itself; the table is here so the provenance is
+checkable.
 
 ## Notes
 

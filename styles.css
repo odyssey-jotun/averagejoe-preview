@@ -268,6 +268,30 @@ h1 em, h2 em {
 }
 .chip svg { width: 14px; height: 14px; color: var(--amber); flex: none; }
 
+/* Hero portrait: the trainer is the one person the hero should show */
+.hero-card { flex-direction: row; align-items: flex-end; gap: 32px; }
+.hero-inner { flex: 1; min-width: 0; }
+.hero-portrait {
+  flex: none;
+  width: 236px;
+  margin: 0;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(10, 11, 13, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+}
+.hero-portrait img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.hero-portrait figcaption {
+  padding: 13px 15px 15px;
+  display: block;
+  line-height: 1.35;
+}
+.hero-portrait strong { display: block; font-size: 0.97rem; letter-spacing: -0.01em; }
+.hero-portrait span { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+
 /* Anchor targets clear the sticky nav */
 section[id], [id] { scroll-margin-top: 90px; }
 
@@ -575,6 +599,13 @@ section[id], [id] { scroll-margin-top: 90px; }
 }
 
 /* Responsive */
+@media (max-width: 1040px) {
+  .hero-card { flex-direction: column; align-items: stretch; gap: 26px; }
+  .hero-portrait { width: 100%; display: flex; align-items: center; gap: 14px; }
+  .hero-portrait img { width: 92px; aspect-ratio: 1; flex: none; }
+  .hero-portrait figcaption { padding: 0 14px 0 0; }
+}
+
 @media (max-width: 960px) {
   .g-3, .steps, .stats { grid-template-columns: 1fr 1fr; }
   .g-2-wide { grid-template-columns: 1fr; gap: 32px; }
@@ -610,7 +641,10 @@ section[id], [id] { scroll-margin-top: 90px; }
   body { font-size: 16px; }
   .g-3, .steps, .stats, .g-2 { grid-template-columns: 1fr; }
   .hero { padding: 10px 10px 0; }
-  .hero-card { min-height: 0; padding: 150px 22px 34px; }
+  .hero-card { min-height: 0; padding: 150px 22px 34px; flex-direction: column; align-items: stretch; gap: 26px; }
+  .hero-portrait { width: 100%; display: flex; align-items: center; gap: 14px; }
+  .hero-portrait img { width: 84px; aspect-ratio: 1; flex: none; }
+  .hero-portrait figcaption { padding: 0 14px 0 0; }
   .hero-meta { margin-top: 24px; padding-top: 20px; }
   .card, .step { padding: 24px; }
   .joe-card { padding: 22px; }
