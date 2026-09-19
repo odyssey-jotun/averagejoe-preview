@@ -66,6 +66,32 @@ place and flagged rather than silently changed.
 These are health claims published under Joe's name and certification. Getting them wrong is a
 bigger risk to him than any design decision in this repo.
 
+## Credentials
+
+The live site describes Joe as "a NASM Certified Personal Trainer and a Certified Nutrition
+Coach". Per Marc, the nutrition credential is not accurate: Joe is a certified personal trainer,
+but not a certified dietitian or nutritionist. Every nutrition credential claim has been removed
+from this preview:
+
+- Hero credential chip, hero portrait caption, and all three page footers.
+- Both meta descriptions.
+- The "Certified Nutrition Coach" card on Meet Joe, replaced with his strength and conditioning
+  apprenticeship, which is a claim his own bio already supports.
+- "Nutrition coaching" as a listed deliverable in the 12 week program.
+- The FAQ line about "managing your nutrition for fat loss", which was also a scope of practice
+  problem. It now says the training side is Joe's, and points to a registered dietitian for
+  individualised eating plans.
+
+**This needs fixing on the live site too, not just here.** In many US states "nutritionist" and
+"dietitian" are protected titles, and giving individualised nutrition prescriptions outside a
+trainer's scope of practice carries real exposure. A design preview cannot fix a claim that is
+still published on averagejoe.fitness.
+
+**Open question for Joe:** if he does hold the NASM Certified Nutrition Coach credential, that is
+a genuine certification and distinct from being a dietitian. It can go back on, worded so it
+cannot be mistaken for a clinical qualification. Right now it is off, because an absent real
+credential is a much smaller problem than a published false one.
+
 ## Contact
 
 The live site's only conversion path is a phone call. No form, no email address, no scheduling
